@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Event Handlers</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('div').hover(
+                function(){
+                    $(this).css({"background-color":"red"});
+                },
+                function(){
+                    $(this).css({"background-color":"blue"});
+                });
+                $('div').dblclick(
+                function(){
+                    $(this).css({"background-color":"green"});
+                });
+                $('div').click(
+                function(){
+                    $(this).css({"background-color":"purple"});
+
+
+                })
+        });
+    </script>
+    <style type="text/css">
+        #div {
+            width: 250px;
+            height: 180px;
+            margin: 10px;
+            padding: 20px;
+            background: #00FF00;
+            border: 1px solid black;
+            font-size: 16pt;
+            color: #fff;
+        }
+        button {
+            margin: 5pt 5pt 0 0;
+        }
+    </style>
+</head>
+<body>
+    <p>Move mouse on any square below to see the result:</p>
+    <div id="div">Click and Hover Events</div>
+
+    
+</body>
+</html>
