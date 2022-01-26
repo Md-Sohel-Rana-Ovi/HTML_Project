@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider Effects</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#slideup").click(function(){
+                $("#div").slideUp("1000"); 
+
+            });
+            $("#slidedown").click(function(){
+                $("#div").slideDown("fast","linear"); 
+
+            });
+
+            $("#toggle").click(function(){
+                $("#div").slideToggle("slow"); 
+
+            });
+        });
+    </script>
+    <style type="text/css">
+        #div {
+            width: 300px;
+            height: 200px;
+            text-align: center;
+            padding-left: 10pt;
+            padding-right: 10pt;
+            border: 1px solid gray;
+            background-color: #bd74ed;
+            font-size: 24pt;
+            
+        }
+        button {
+            margin: 5pt 5pt 0 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>JQuery show and hide effects</h1>
+   
+    <div id="div">Div Box
+        
+    </div>
+    <button id="slideup" style="background-color: #0daade; width: 100px; border: none; border-radius: 10PX; margin-bottom: 10px;">Slide Up</button>
+    <button id="slidedown" style="background-color: #de410d; width: 100px; border: none; border-radius: 10PX; margin-bottom: 10px;">Slide Down</button>
+    <button id="toggle" style="background-color: #c1c724; width: 100px; border: none; border-radius: 10PX; margin-bottom: 10px;">Toggle Slide</button>
+
+
+    
+</body>
+</html>
